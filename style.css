@@ -1,0 +1,32 @@
+/*ESTILO DE LETRA GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tituloTP{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 36px;
+    margin: 10px;
+    font-weight: 600;
+    letter-spacing: -1px; 
+}
+
+.panelDeBotones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.boton{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10;
+    border: none;
+    padding: 10px;
+    margin: 2.5px;
+    background-color: transparent;
+}
