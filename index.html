@@ -10,6 +10,8 @@
     <title>TP2 - Generador de memes</title>
 </head>
 <body>
+
+    <!-- INICIO HEADER -->
     <header>
         <h1 class="tituloTP">Generador de Memes</h1>
         <div class="panelDeBotones">
@@ -18,7 +20,75 @@
             <button class="boton"><i class="fas fa-lightbulb"></i> Modo oscuro</button>
         </div>
     </header>
+    <!-- FIN HEADER -->
 
+    <!-- INICIO SECCION PANEL IMAGEN -->
+    <section>
+        <h2>IMAGEN</h2>
+        <!------------  URL ------------->
+        <div>
+            <h3>URL</h3>
+            <input type="text">
+        </div>
+        <!------------- FONDO ----------->
+        <h3>FONDO</h3>
+        <div>
+            <div> <input type="aria-hidden"></div>
+            <div>
+                <select name="" id="">
+                    <option value="unset">Ninguno</option>
+                    <option value="lighten">Aclarar</option>
+                    <option value="darken">Oscurecer</option>
+                    <option value="difference">Diferencia</option>
+                    <option value="luminosity">Luminosidad</option>
+                    <option value="multiply">Multiplicar</option>
+                </select>
+            </div>
+        </div>
+        <!------------- FILTROS ----------->
+        <h3>FILTROS</h3>
+        <div>
+            <label for="brightness">BRILLO</label>
+            <input type="range" min="0" max="1" step="0.1" value="1">
+        </div>
+
+        <div>
+            <label for="opacity">OPACIDAD</label>
+            <input type="range" min="0" max="1" step="0.1" value="1">
+        </div>
+
+        <div>
+            <label for="contrast">CONTRASTE</label>
+            <input type="range" min="100" max="1000" step="1%" value="100%">
+        </div>
+
+        <div>
+            <label for="blur">DESENFOQUE</label>
+            <input type="range" min="0px" max="10px" step="0.1px" value="0px">
+        </div>
+
+        <div>
+            <label for="grayscale">ESCALA DE GRISES</label>
+            <input type="range" min="0%" max="100%" step="1%" value="0%">
+        </div>
+
+        <div>
+            <label for="sepia">SEPIA</label>
+            <input type="range" min="0%" max="100%" step="1%" value="0%">
+        </div>
+
+        <div>
+            <label for="hue-rotation">HUE</label>
+            <input type="range" min="0deg" max="359deg" step="1deg" value="0deg">
+        </div>
+
+        <div>
+            <label for="brightness">NEGATIVO</label>
+            <input type="range" min="0" max="1" step="0.1" value="1">
+        </div>
+    </section>
+
+    <!-- FIN SECCION PANEL IMAGEN -->
 
     <script src="app.js"></script>
 </body>
