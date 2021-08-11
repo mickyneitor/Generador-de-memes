@@ -1,25 +1,15 @@
 /*ESTILO DE LETRA GOOGLE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
-*{
-    font-family: 'Open Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    color: var(--color-text);
-    
-    overflow: hidden;
-    margin: 0;
-   
-    box-sizing: border-box;
-    background-color: rgb(61, 59, 59);
-}
-
-html, body {
-    height: 100vh;
-    margin: 0;
+  background-color: #393e49;
 }
 
 header {
@@ -36,14 +26,7 @@ header {
     margin-bottom: 5px;
   }
 
-/* .tituloTP{
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 36px;
-    margin: 10px;
-    font-weight: 600;
-    letter-spacing: -1px; 
-} */
+
 
 .panelDeBotones{
     display: flex;
@@ -71,6 +54,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
   }
 
   /*----------- seccion meme  ---------*/
@@ -98,6 +82,7 @@ main {
   p {
       margin:0;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: black;
       
   }
 
