@@ -23,6 +23,7 @@
     <!-- FIN HEADER -->
 
     <!-- INICIO SECCION PANEL IMAGEN -->
+    <button aria-label="cerrar panel imagen"><i class="fas fa-times"></i></button>
     <section>
         <h2>IMAGEN</h2>
         <!------------  URL ------------->
@@ -39,7 +40,7 @@
             </div>
             <div>
                 <select name="" id="">
-                    <option value="unset">Ninguno</option>
+                    <option value="unset" selected>Ninguno</option>
                     <option value="lighten">Aclarar</option>
                     <option value="darken">Oscurecer</option>
                     <option value="difference">Diferencia</option>
@@ -89,12 +90,15 @@
             <label for="brightness">NEGATIVO</label>
             <input type="range" min="0" max="1" step="0.1" value="1">
         </div>
+
+        <button>Restablecer filtros</button>
     </section>
     <!-- FIN PANEL IMAGEN -->
 
     <!-- INICIO PANEL TEXTO -->
 
     <aside>
+        <button aria-label="cerrar panel texto"><i class="fas fa-times"></i></button>
         <section>
             <h2>TEXTO</h2>
             <!----------- TEXTO SUPERIOR ----------->
@@ -125,7 +129,7 @@
                     <option value="Andale Mono">Andale Mono</option>
                     <option value="Comic Sans MS">Comic Sans MS</option>
                     <option value="Helvetica">Helvetica</option>
-                    <option value="Impact">Impact</option>
+                    <option value="Impact" selected>Impact</option>
                     <option value="Verdana">Verdana</option>
                     <option value="Times New Roman">Times New Roman</option>
                 </select>
