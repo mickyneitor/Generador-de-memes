@@ -5,7 +5,7 @@ conceptos aprendidos en el módulo uno de CSS y HTML incorporando Javascript rec
 
 El TP se hizo de manera grupal con las siguientes desarrolladoras: 
 
-💚 Eliana 
+💚 Eliana Rojas
 
 ❤️ Stella Maris Loreto
 
