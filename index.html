@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--links fontawesome (crear kit) para botones imagen, texto y modo oscuro-->
     <script src="https://kit.fontawesome.com/33e038a340.js" crossorigin="anonymous"></script>  
     <title>TP2 - Generador de memes</title>
@@ -41,31 +44,35 @@
       </main>
 
     <!-- INICIO SECCION PANEL IMAGEN -->
-    <section>
-        <h2>IMAGEN</h2>
+
+    <aside>
+    <section class="panel">
+        <h2 class="titulo-imagen">IMAGEN</h2>
         <!------------  URL ------------->
-        <div>
-            <h3>URL</h3>
-            <input type="text">
+        <div class="panel-url">
+            <h3 class="titulo-url">URL</h3>
+            <input type="url" id="url-input">
         </div>
         <!------------- FONDO ----------->
-        <h3>FONDO</h3>
-        <div>
-            <div>
-                <input type="color">
-                <span>#color</span>
+        <div class="panel-fondo">
+            <h3 class="titulo-fondo">FONDO</h3>
+            <div class="color-modofusion">
+                <label for="color-fondo" class="input-color">
+                    <input type="color" id="color-fondo" name="color-fondo" value="#FFFFFF" aria-label="Seleccione color de fondo">
+                    <span class="color-texto-fondo">#FFFFFF</span> 
+                  
+                </label>
+                <div class="input-background">
+                    <select name="background-choices" id="select-background">
+                        <option value="none">Ninguno</option>
+                        <option value="lighten">Aclarar</option>
+                        <option value="darken">Oscurecer</option>
+                        <option value="difference">Diferencia</option>
+                        <option value="luminosity">Luminosidad</option>
+                        <option value="multiply">Multiplicar</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                <select name="" id="">
-                    <option value="unset">Ninguno</option>
-                    <option value="lighten">Aclarar</option>
-                    <option value="darken">Oscurecer</option>
-                    <option value="difference">Diferencia</option>
-                    <option value="luminosity">Luminosidad</option>
-                    <option value="multiply">Multiplicar</option>
-                </select>
-            </div>
-        </div>
         <!------------- FILTROS ----------->
         <h3>FILTROS</h3>
         <div>
@@ -108,6 +115,7 @@
             <input type="range" min="0" max="1" step="0.1" value="1">
         </div>
     </section>
+    </aside>
     <!-- FIN SECCION PANEL IMAGEN -->
 
     <script src="app.js"></script>
