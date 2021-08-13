@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--links fontawesome (crear kit) para botones imagen, texto y modo oscuro-->
     <script src="https://kit.fontawesome.com/33e038a340.js" crossorigin="anonymous"></script>  
     <title>TP2 - Generador de memes</title>
@@ -46,75 +46,75 @@
     <!-- INICIO SECCION PANEL IMAGEN -->
 
     <aside>
-    <section class="panel">
-        <h2 class="titulo-imagen">IMAGEN</h2>
-        <!------------  URL ------------->
-        <div class="panel-url">
-            <h3 class="titulo-url">URL</h3>
-            <input type="url" id="url-input">
-        </div>
-        <!------------- FONDO ----------->
-        <div class="panel-fondo">
-            <h3 class="titulo-fondo">FONDO</h3>
-            <div class="color-modofusion">
-                <label for="color-fondo" class="input-color">
-                    <input type="color" id="color-fondo" name="color-fondo" value="#FFFFFF" aria-label="Seleccione color de fondo">
-                    <span class="color-texto-fondo">#FFFFFF</span> 
-                  
-                </label>
-                <div class="input-background">
-                    <select name="background-choices" id="select-background">
-                        <option value="none">Ninguno</option>
-                        <option value="lighten">Aclarar</option>
-                        <option value="darken">Oscurecer</option>
-                        <option value="difference">Diferencia</option>
-                        <option value="luminosity">Luminosidad</option>
-                        <option value="multiply">Multiplicar</option>
-                    </select>
-                </div>
+        <section class="panel">
+            <h2 class="titulo-imagen">IMAGEN</h2>
+            <!------------  URL ------------->
+            <div class="panel-url">
+                <h3 class="titulo-url">URL</h3>
+                <input type="url" id="url-input">
             </div>
-        <!------------- FILTROS ----------->
-        <h3>FILTROS</h3>
-        <div>
-            <label for="brightness">BRILLO</label>
-            <input type="range" min="0" max="1" step="0.1" value="1">
-        </div>
+            <!------------- FONDO ----------->
+            <div class="panel-fondo">
+                <h3 class="titulo-fondo">FONDO</h3>
+                <div class="color-modofusion">
+                    <label for="color-fondo" class="input-color">
+                        <input type="color" id="color-fondo" name="color-fondo" value="#FFFFFF" aria-label="Seleccione color de fondo">
+                        <span class="color-texto-fondo">#FFFFFF</span> 
+                  
+                    </label>
+                    <div class="input-background">
+                        <select name="background-choices" id="select-background">
+                            <option value="none">Ninguno</option>
+                            <option value="lighten">Aclarar</option>
+                            <option value="darken">Oscurecer</option>
+                            <option value="difference">Diferencia</option>
+                            <option value="luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>
+                        </select>
+                    </div>
+                </div>
+            <!------------- FILTROS ----------->
+            <h3>FILTROS</h3>
+            <div>
+                <label for="brightness">BRILLO</label>
+                <input type="range" min="0" max="1" step="0.1" value="1">
+            </div>
 
-        <div>
-            <label for="opacity">OPACIDAD</label>
-            <input type="range" min="0" max="1" step="0.1" value="1">
-        </div>
+            <div>
+                <label for="opacity">OPACIDAD</label>
+                <input type="range" min="0" max="1" step="0.1" value="1">
+            </div>
 
-        <div>
-            <label for="contrast">CONTRASTE</label>
-            <input type="range" min="100" max="1000" step="1%" value="100%">
-        </div>
+            <div>
+                <label for="contrast">CONTRASTE</label>
+                <input type="range" min="100" max="1000" step="1%" value="100%">
+            </div>
 
-        <div>
-            <label for="blur">DESENFOQUE</label>
-            <input type="range" min="0px" max="10px" step="0.1px" value="0px">
-        </div>
+            <div>
+                <label for="blur">DESENFOQUE</label>
+                <input type="range" min="0px" max="10px" step="0.1px" value="0px">
+            </div>
 
-        <div>
-            <label for="grayscale">ESCALA DE GRISES</label>
-            <input type="range" min="0%" max="100%" step="1%" value="0%">
-        </div>
+            <div>
+                <label for="grayscale">ESCALA DE GRISES</label>
+                <input type="range" min="0%" max="100%" step="1%" value="0%">
+            </div>
 
-        <div>
-            <label for="sepia">SEPIA</label>
-            <input type="range" min="0%" max="100%" step="1%" value="0%">
-        </div>
+            <div>
+                <label for="sepia">SEPIA</label>
+                <input type="range" min="0%" max="100%" step="1%" value="0%">
+            </div>
 
-        <div>
-            <label for="hue-rotation">HUE</label>
-            <input type="range" min="0deg" max="359deg" step="1deg" value="0deg">
-        </div>
+            <div>
+                <label for="hue-rotation">HUE</label>
+                <input type="range" min="0deg" max="359deg" step="1deg" value="0deg">
+            </div>
 
-        <div>
-            <label for="brightness">NEGATIVO</label>
-            <input type="range" min="0" max="1" step="0.1" value="1">
-        </div>
-    </section>
+            <div>
+                <label for="brightness">NEGATIVO</label>
+                <input type="range" min="0" max="1" step="0.1" value="1">
+            </div>
+        </section>
     </aside>
     <!-- FIN SECCION PANEL IMAGEN -->
 
