@@ -84,3 +84,14 @@ botonTexto.onclick = () => {
     panelTexto.classList.remove('no-mostrar-panel');
 
 };
+
+// Función que me sirve para fijar el panel de imagen cuando se recarga la página
+
+window.addEventListener('load' , () => {
+
+    if(window.innerWidth > 480) {
+
+        panelImagen.classList.remove('no-mostrar-panel');
+        panelTexto.classList.add('no-mostrar-panel');
+    }
+})
