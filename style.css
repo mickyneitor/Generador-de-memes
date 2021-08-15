@@ -245,6 +245,6 @@ input[type="range"] {
 
   /* Desaparecer texto del meme */
 
-  .no-mostrar-texto {
+  .no-mostrar-texto, .no-mostrar-panel {
     display: none;
   }
