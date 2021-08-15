@@ -29,11 +29,14 @@
     <!-- INICIO SECCION DE MEME -->
     <main>
         <section class="meme-container">
-          <div class="top-text">
-              <p>TOP TEXT</p></div>
-          <div class="img-src" id="contenedor-img-meme"><img  src="" alt="aqui estara la imagen del meme"></div>
-          <div class="bottom-text">
-              <p>BOTTOM TEXT</p></div>
+          <div class="top-text" id="texto-sup-meme">
+              <p>TOP TEXT</p>
+          </div>
+          <div class="img-src" id="contenedor-img-meme"><img  src="" alt="aqui estara la imagen del meme">
+          </div>
+          <div class="bottom-text" id="texto-inf-meme">
+              <p>BOTTOM TEXT</p>
+          </div>
         </section>
       
         <button type = "button" class="descargar-imagen" id="boton-descargar" aria-label="Descargar meme">
@@ -152,7 +155,7 @@
             <!----------- TEXTO SUPERIOR ----------->
             <div>
                 <h3>SUPERIOR</h3>
-                <textarea name="" id="" cols="30" rows="1"></textarea>
+                <textarea name="" id="texto-superior-textarea" cols="30" rows="1"></textarea>
                 <div>
                     <input type="checkbox">
                     <label for="">Sin texto superior</label>
@@ -161,7 +164,7 @@
             <!----------- TEXTO INFERIOR ----------->
             <div>
                 <h3>INFERIOR</h3>
-                <textarea name="" id="" cols="30" rows="1"></textarea>
+                <textarea name="" id="texto-inferior-textarea" cols="30" rows="1"></textarea>
                 <div>
                     <input type="checkbox">
                     <label for="">Sin texto inferior</label>
