@@ -230,3 +230,8 @@ input[type="range"] {
   appearance: none;
   width:215px; */
 }
+
+.zIndex{
+  position: relative;
+  z-index: 1;
+}
