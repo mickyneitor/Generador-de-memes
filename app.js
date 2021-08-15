@@ -17,6 +17,11 @@ const botonTexto = document.querySelector('#boton-texto');
 const panelImagen = document.getElementById('panel-imagen');
 const panelTexto = document.getElementById('panel-texto');
 
+const cierrePanelImagen = document.getElementById("cierre-panel-imagen");
+const cierrePanelTexto = document.getElementById("cierre-panel-texto");
+
+
+
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
     
@@ -94,4 +99,19 @@ window.addEventListener('load' , () => {
         panelImagen.classList.remove('no-mostrar-panel');
         panelTexto.classList.add('no-mostrar-panel');
     }
-})
+});
+
+// Botoncito de cierre de los paneles
+
+cierrePanelImagen.addEventListener('click', () => {
+    // console.log('cierra')
+    panelImagen.classList.add('no-mostrar-panel');
+});
+
+cierrePanelTexto.addEventListener ('click', () => {
+
+    panelTexto.classList.add('no-mostrar-panel');
+});
+
+
+
