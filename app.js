@@ -12,6 +12,11 @@ const textoInferiorMeme = document.getElementById("texto-inf-meme");
 const sinTextoSuperior = document.getElementById("sin-texto-superior");
 const sinTextoInferior = document.getElementById("sin-texto-inferior");
 
+const botonImagen = document.querySelector('#boton-imagen');
+const botonTexto = document.querySelector('#boton-texto');
+const panelImagen = document.getElementById('panel-imagen');
+const panelTexto = document.getElementById('panel-texto');
+
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
     
@@ -62,4 +67,20 @@ sinTextoInferior.onchange = () => {
     else{
         textoInferiorMeme.classList.remove('no-mostrar-texto');
     }
+};
+
+// Funciones para que al hacer click en algún botón del header, me abra el aside correspondiente
+
+botonImagen.onclick = () => {
+
+    panelImagen.classList.remove('no-mostrar-panel');
+    panelTexto.classList.add('no-mostrar-panel');
+   
+};
+
+botonTexto.onclick = () => {
+
+    panelImagen.classList.add('no-mostrar-panel');
+    panelTexto.classList.remove('no-mostrar-panel');
+
 };

@@ -18,8 +18,8 @@
     <header>
         <h1 class="tituloTP">Generador de Memes</h1>
         <div class="panelDeBotones">
-            <button class="boton"><i class="fas fa-file-image"></i> Imagen</button>
-            <button class="boton"><i class="fas fa-font"></i> Texto</button>
+            <button class="boton" id="boton-imagen"><i class="fas fa-file-image"></i> Imagen</button>
+            <button class="boton" id="boton-texto"><i class="fas fa-font"></i> Texto</button>
             <button class="boton"><i class="fas fa-lightbulb"></i> Modo oscuro</button>
         </div>
     </header>
@@ -47,7 +47,7 @@
       </main>
 
     <!-- INICIO SECCION PANEL IMAGEN -->
-    <aside>
+    <aside id="panel-imagen" class="no-mostrar-panel">
         <button aria-label="cerrar panel imagen"><i class="fas fa-times"></i></button>
     <section>
         <h2>IMAGEN</h2>
@@ -148,7 +148,7 @@
     <!-- FIN PANEL IMAGEN -->
 
     <!-- INICIO PANEL TEXTO -->
-    <aside>
+    <aside id="panel-texto" class="no-mostrar-panel">
         <button aria-label="cerrar panel texto"><i class="fas fa-times"></i></button>
         <section>
             <h2>TEXTO</h2>
