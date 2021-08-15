@@ -31,7 +31,7 @@
         <section class="meme-container">
           <div class="top-text">
               <p>TOP TEXT</p></div>
-          <div class="img-src"><img src="" alt="aqui estara la imagen del meme"></div>
+          <div class="img-src" id="contenedor-img-meme"><img  src="" alt="aqui estara la imagen del meme"></div>
           <div class="bottom-text">
               <p>BOTTOM TEXT</p></div>
         </section>
@@ -46,9 +46,16 @@
     <!-- INICIO SECCION PANEL IMAGEN -->
     <aside>
         <button aria-label="cerrar panel imagen"><i class="fas fa-times"></i></button>
-        <section>
-            <h2>IMAGEN</h2>
-            <!------------  URL ------------->
+    <section>
+        <h2>IMAGEN</h2>
+        <!------------  URL ------------->
+        <div>
+            <h3>URL</h3>
+            <input type="text" id="input-url">
+        </div>
+        <!------------- FONDO ----------->
+        <h3>FONDO</h3>
+        <div>
             <div>
                 <h3>URL</h3>
                 <input type="text">
