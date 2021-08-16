@@ -13,49 +13,49 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: black;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+}
 
-  h1 {
-    color: blanchedalmond;
-    font-size: 40px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+h1 {
+  color: blanchedalmond;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
 
 .panelDeBotones{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
 .boton{
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10;
-    border: none;
-    padding: 10px;
-    margin: 2.5px;
-    color: white;
-    background-color: transparent;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10;
+  border: none;
+  padding: 10px;
+  margin: 2.5px;
+  color: white;
+  background-color: transparent;
 }
 
 
 /*------   main   ------*/
   
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
 
   /*----------- seccion meme  ---------*/
 
@@ -108,6 +108,7 @@ main {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+
 /*----------- Aside  ---------*/
 
 aside {
@@ -122,16 +123,14 @@ aside {
 
 
 .panel {
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- align-content: flex-end;
- padding: 15px;
- padding-top: 25px;
- max-width: 300px;
- height: 100vh;
- 
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 15px;
+  padding-top: 25px;
+  max-width: 300px;
+  height: 100vh;
 }
 
 .titulo-imagen {
@@ -237,6 +236,7 @@ input[type="range"] {
   appearance: none;
   width:215px; */
 }
+
   /* Acomodar imagen del meme */
 
  img{
@@ -342,4 +342,5 @@ input[type=checkbox]{
   }
   
 }
+
 

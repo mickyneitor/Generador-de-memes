@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--links fontawesome (crear kit) para botones imagen, texto y modo oscuro-->
-    <script src="https://kit.fontawesome.com/33e038a340.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/33e038a340.js" crossorigin="anonymous"></script>
     <title>TP2 - Generador de memes</title>
 </head>
+
 <body>
 
     <!-- INICIO HEADER -->
@@ -25,7 +29,7 @@
     </header>
     <!-- FIN HEADER -->
 
-    
+
     <!-- INICIO SECCION DE MEME -->
     <main class="ancho-main">
         <section class="meme-container">
@@ -37,14 +41,15 @@
           <div class="bottom-text" id="texto-inf-meme">
               <p>BOTTOM TEXT</p>
           </div>
+
         </section>
-      
-        <button type = "button" class="descargar-imagen" id="boton-descargar" aria-label="Descargar meme">
+
+        <button type="button" class="descargar-imagen" id="boton-descargar" aria-label="Descargar meme">
             <i class="fas fa-download"></i>
             Disfrute su meme
         </button>
-      
-      </main>
+
+    </main>
 
     <!-- INICIO SECCION PANEL IMAGEN -->
     <aside id="panel-imagen" class="no-mostrar-panel ancho-aside lateral">
@@ -75,9 +80,10 @@
                     <h3 class="titulo-fondo">FONDO</h3>
                     <div class="color-modofusion">
                         <label for="color-fondo" class="input-color">
-                            <input type="color" id="color-fondo" name="color-fondo" value="#FFFFFF" aria-label="Seleccione color de fondo">
-                            <span class="color-texto-fondo">#FFFFFF</span> 
-                    
+                            <input type="color" id="color-fondo" name="color-fondo" value="#FFFFFF"
+                                aria-label="Seleccione color de fondo">
+                            <span class="color-texto-fondo">#FFFFFF</span>
+
                         </label>
                         <div class="input-background">
                             <select name="background-choices" id="select-background">
@@ -104,47 +110,52 @@
                     </div>
                     <div>
                         <label for="brightness">BRILLO</label>
-                        <input type="range" min="0" max="1" step="0.1" value="1">
+                        <input type="range" id="brightness" min="0" max="1" step="0.1" value="1">
                     </div>
 
                     <div>
                         <label for="opacity">OPACIDAD</label>
-                        <input type="range" min="0" max="1" step="0.1" value="1">
+                        <input type="range" id="opacity" min="0" max="1" step="0.1" value="1">
                     </div>
 
                     <div>
                         <label for="contrast">CONTRASTE</label>
-                        <input type="range" min="100" max="1000" step="1%" value="100%">
+                        <input type="range" id="contrast" min="100" max="1000" step="1%" value="100%">
                     </div>
 
                     <div>
                         <label for="blur">DESENFOQUE</label>
-                        <input type="range" min="0px" max="10px" step="0.1px" value="0px">
+                        <input type="range" id="blur" min="0px" max="10px" step="0.1px" value="0px">
                     </div>
 
                     <div>
                         <label for="grayscale">ESCALA DE GRISES</label>
-                        <input type="range" min="0%" max="100%" step="1%" value="0%">
+                        <input type="range" id="grayScale" min="0" max="100" step="1%" value="0%">
                     </div>
 
                     <div>
                         <label for="sepia">SEPIA</label>
-                        <input type="range" min="0%" max="100%" step="1%" value="0%">
+                        <input type="range" id="sepia" min="0%" max="100%" step="1%" value="0%">
                     </div>
 
                     <div>
-                        <label for="hue-rotation">HUE</label>
-                        <input type="range" min="0deg" max="359deg" step="1deg" value="0deg">
+                        <label for="hue-rotate">HUE</label>
+                        <input type="range" id="hue" min="0deg" max="359deg" step="1deg" value="0deg">
                     </div>
 
                     <div>
-                        <label for="brightness">NEGATIVO</label>
-                        <input type="range" min="0" max="1" step="0.1" value="1">
+                        <label for="saturate">SATURADO</label>
+                        <input type="range" id="saturate" min="100%" max="1000%" step="10%" value="100%">
                     </div>
-            </div>    
-            <button>Restablecer filtros</button>
+
+                    <div>
+                        <label for="invert">NEGATIVO</label>
+                        <input type="range" id="invert" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+                <button>Restablecer filtros</button>
         </section>
-    </aside>    
+    </aside>
     <!-- FIN PANEL IMAGEN -->
 
     <!-- INICIO PANEL TEXTO -->
@@ -163,7 +174,8 @@
             </div>
             <!----------- TEXTO INFERIOR ----------->
             <div>
-                <h3>INFERIOR</h3>
+              <h3>INFERIOR</h3>
+            <div>
                 <textarea name="texto-inferior" id="texto-inferior-textarea" cols="30" rows="1"></textarea>
                 <div class="check-sin-texto">
                     <input type="checkbox" id="sin-texto-inferior" class="chekbox">
@@ -184,7 +196,8 @@
                     <option value="Verdana">Verdana</option>
                     <option value="Times New Roman">Times New Roman</option>
                 </select>
-                
+            </div>
+
                 <div class="tamanio-alineacion">
                     <!-- tamaño letra-->
                     <input type="number" min="12" value="40">
@@ -203,7 +216,7 @@
                         <div>
                             <input type="color">
                             <span>#color</span>
-                        </div>  
+                        </div>
                     </div>
                     <!-- color del fondo-->
                     <div>
@@ -225,7 +238,7 @@
                         <button>Ninguno</button>
                         <button>Claro</button>
                         <button>Oscuro</button>
-                    </div>    
+                    </div>
                 </div>
                 <!------------- ESPACIADO ------------>
                 <div>
@@ -246,9 +259,10 @@
                 </div>
             </div>
         </section>
-    </aside>  
+    </aside>
     <!-- FIN SECCION PANEL TEXTO -->
 
     <script src="app.js"></script>
 </body>
+
 </html>
