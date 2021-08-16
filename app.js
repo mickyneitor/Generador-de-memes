@@ -1,14 +1,3 @@
-
-brightnessInput.addEventListener('change', hacerFuncionarFiltros)
-opacityInput.addEventListener('change', hacerFuncionarFiltros)
-contrastInput.addEventListener('change', hacerFuncionarFiltros)
-blurInput.addEventListener('change', hacerFuncionarFiltros)
-grayScaleInput.addEventListener('change', hacerFuncionarFiltros)
-sepiaInput.addEventListener('change', hacerFuncionarFiltros)
-hueRotationInput.addEventListener('change', hacerFuncionarFiltros)
-saturateInput.addEventListener('change', hacerFuncionarFiltros)
-invertInput.addEventListener('change', hacerFuncionarFiltros)
-=======
 // Imagen - Declaración de variables
 
 const inputURL = document.getElementById("input-url");
@@ -67,6 +56,15 @@ const hacerFuncionarFiltros = () => {
    `;
 }
 
+brightnessInput.addEventListener('change', hacerFuncionarFiltros)
+opacityInput.addEventListener('change', hacerFuncionarFiltros)
+contrastInput.addEventListener('change', hacerFuncionarFiltros)
+blurInput.addEventListener('change', hacerFuncionarFiltros)
+grayScaleInput.addEventListener('change', hacerFuncionarFiltros)
+sepiaInput.addEventListener('change', hacerFuncionarFiltros)
+hueRotationInput.addEventListener('change', hacerFuncionarFiltros)
+saturateInput.addEventListener('change', hacerFuncionarFiltros)
+invertInput.addEventListener('change', hacerFuncionarFiltros)
 
 // Escribir texto en la parte superior del recuadro del meme
 
