@@ -19,11 +19,11 @@
 <body>
 
     <!-- INICIO HEADER -->
-    <header>
+    <header class="ancho-header">
         <h1 class="tituloTP">Generador de Memes</h1>
         <div class="panelDeBotones">
-            <button class="boton"><i class="fas fa-file-image"></i> Imagen</button>
-            <button class="boton"><i class="fas fa-font"></i> Texto</button>
+            <button class="boton" id="boton-imagen"><i class="fas fa-file-image"></i> Imagen</button>
+            <button class="boton" id="boton-texto"><i class="fas fa-font"></i> Texto</button>
             <button class="boton"><i class="fas fa-lightbulb"></i> Modo oscuro</button>
         </div>
     </header>
@@ -31,17 +31,17 @@
 
 
     <!-- INICIO SECCION DE MEME -->
-    <main>
+    <main class="ancho-main">
         <section class="meme-container">
-            <div class="top-text">
-                <p>TOP TEXT</p>
-            </div>
-            <div class="img-src divMeme"><img src="https://placekitten.com/200/300"
-                    alt="aqui estara la imagen del meme">
-            </div>
-            <div class="bottom-text">
-                <p>BOTTOM TEXT</p>
-            </div>
+          <div class="top-text" id="texto-sup-meme">
+              <p>TOP TEXT</p>
+          </div>
+          <div class="img-src" id="contenedor-img-meme"><img  src="" alt="aqui estara la imagen del meme">
+          </div>
+          <div class="bottom-text" id="texto-inf-meme">
+              <p>BOTTOM TEXT</p>
+          </div>
+
         </section>
 
         <button type="button" class="descargar-imagen" id="boton-descargar" aria-label="Descargar meme">
@@ -52,11 +52,18 @@
     </main>
 
     <!-- INICIO SECCION PANEL IMAGEN -->
-    <aside>
-        <button aria-label="cerrar panel imagen"><i class="fas fa-times"></i></button>
-        <section>
-            <h2>IMAGEN</h2>
-            <!------------  URL ------------->
+    <aside id="panel-imagen" class="no-mostrar-panel ancho-aside lateral">
+        <button id="cierre-panel-imagen" class="close btn-cierre" aria-label="cerrar panel imagen" ><i class="fas fa-times"></i></button>
+    <section>
+        <h2 class="subtitulo-panel">IMAGEN</h2>
+        <!------------  URL ------------->
+        <div>
+            <h3>URL</h3>
+            <input type="text" id="input-url">
+        </div>
+        <!------------- FONDO ----------->
+        <h3>FONDO</h3>
+        <div>
             <div>
                 <h3>URL</h3>
                 <input type="text">
@@ -152,32 +159,33 @@
     <!-- FIN PANEL IMAGEN -->
 
     <!-- INICIO PANEL TEXTO -->
-    <aside>
-        <button aria-label="cerrar panel texto"><i class="fas fa-times"></i></button>
+    <aside id="panel-texto" class="no-mostrar-panel ancho-aside lateral">
+        <button id="cierre-panel-texto" class="close btn-cierre" aria-label="cerrar panel texto"><i class="fas fa-times"></i></button>
         <section>
-            <h2>TEXTO</h2>
+            <h2 class="subtitulo-panel">TEXTO</h2>
             <!----------- TEXTO SUPERIOR ----------->
             <div>
                 <h3>SUPERIOR</h3>
-                <textarea name="" id="" cols="30" rows="1"></textarea>
-                <div>
-                    <input type="checkbox">
-                    <label for="">Sin texto superior</label>
-                </div>
+                <textarea name="texto-superior" id="texto-superior-textarea" cols="30" rows="1"></textarea>
+                <div class="check-sin-texto">
+                    <input type="checkbox" id="sin-texto-superior">
+                    <label for="sin-texto-superior" class="label-sin-texto">Sin texto superior</label>
+                </div>   
             </div>
             <!----------- TEXTO INFERIOR ----------->
             <div>
-                <h3>INFERIOR</h3>
-                <textarea name="" id="" cols="30" rows="1"></textarea>
-                <div>
-                    <input type="checkbox">
-                    <label for="">Sin texto inferior</label>
-                </div>
-            </div>
-            <!--------------  FUENTE --------------->
+              <h3>INFERIOR</h3>
             <div>
+                <textarea name="texto-inferior" id="texto-inferior-textarea" cols="30" rows="1"></textarea>
+                <div class="check-sin-texto">
+                    <input type="checkbox" id="sin-texto-inferior" class="chekbox">
+                    <label for="sin-texto-inferior" class="label-sin-texto">Sin texto inferior</label>
+                </div>   
+            </div>
+            <!--------------  FUENTE --------------->    
+            <div class="fuente">
                 <h3>FUENTE</h3>
-                <select>
+                <select class="fuente-select">
                     <option value="Arial">Arial</option>
                     <option value="Arial Black">Arial Black</option>
                     <option value="American Typewriter">American Typewriter</option>
@@ -188,8 +196,9 @@
                     <option value="Verdana">Verdana</option>
                     <option value="Times New Roman">Times New Roman</option>
                 </select>
+            </div>
 
-                <div>
+                <div class="tamanio-alineacion">
                     <!-- tamaño letra-->
                     <input type="number" min="12" value="40">
                     <!-- botones alineación de texto-->

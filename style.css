@@ -59,50 +59,55 @@ main {
 
   /*----------- seccion meme  ---------*/
 
-.meme-container {
-  width: 100%;
-  max-width: 500px;
-  height:500px;
-  display: flex;
-  flex-direction: column;
-}
+  .meme-container {
+    width: 100%;
+    max-width: 500px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.top-text, .bottom-text {
-  padding: 15px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  font-weight: bolder;      
-}
+  .top-text, .bottom-text {
+   padding: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    
+    
+  }
 
-p {
-  margin:0;
-  font-family: 'Montserrat', sans-serif;
-  color: black;       
-}
+  p {
+      margin:0;
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      
+  }
 
-.img-src {
-  height: 100%;
-  background-color: black;
-  overflow: hidden;
-}
 
-.descargar-imagen {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  margin-top: 10px;
-  border-radius: 6px;
-  border: none;
-  background-color: rgb(16, 146, 16);
-  color: white;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .img-src {
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .descargar-imagen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(16, 146, 16);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
 
 /*----------- Aside  ---------*/
 
@@ -148,6 +153,7 @@ input, select, textarea {
   border: none;
   border-radius: 4px;
   height: 33px;
+  width: 100%;
   padding: 3px;
   
 }
@@ -230,4 +236,111 @@ input[type="range"] {
   appearance: none;
   width:215px; */
 }
+
+  /* Acomodar imagen del meme */
+
+ img{
+    width: 100%;
+    height: 100%;
+  } 
+
+  /* Desaparecer texto del meme */
+
+  .no-mostrar-texto, .no-mostrar-panel {
+    display: none;
+  }
+
+  /* Cerrar panel*/
+
+  .close {
+    display: none;
+  }
+
+/* Acomodar estilos del aside*/
+
+.ancho-main, .ancho-header {
+  width: 75%;
+}
+
+.ancho-aside {
+  width: 25%;
+}
+
+.lateral {
+    padding: 2%;
+}
+
+.check-sin-texto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+}
+
+.label-sin-texto {
+  padding: 10px;
+}
+
+.fuente-select {
+  margin-bottom: 10px;
+  
+}
+
+.tamanio-alineacion { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Asides en la vista mobile */
+
+/* Media Query */
+
+@media(max-width:480px){
+  #panel-texto, #panel-imagen {
+    height: 100vh;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .close{
+    display: block;
+  }
+
+  .btn-cierre {
+    display: contents;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .subtitulo-panel{
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .ancho-header, .ancho-main{
+    width: 100%;
+  }
+
+  .meme-container{
+    width: 75%;
+    height: 400px;
+  }
+
+  .tituloTP {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  
+}
+
 
