@@ -15,7 +15,7 @@
 <body>
 
     <!-- INICIO HEADER -->
-    <header>
+    <header class="ancho-header-escritorio">
         <h1 class="tituloTP">Generador de Memes</h1>
         <div class="panelDeBotones">
             <button class="boton" id="boton-imagen"><i class="fas fa-file-image"></i> Imagen</button>
@@ -27,7 +27,7 @@
 
     
     <!-- INICIO SECCION DE MEME -->
-    <main>
+    <main class="ancho-main-escritorio">
         <section class="meme-container">
           <div class="top-text" id="texto-sup-meme">
               <p>TOP TEXT</p>
@@ -47,7 +47,7 @@
       </main>
 
     <!-- INICIO SECCION PANEL IMAGEN -->
-    <aside id="panel-imagen" class="no-mostrar-panel">
+    <aside id="panel-imagen" class="no-mostrar-panel ancho-aside lateral">
         <button id="cierre-panel-imagen" class="close" aria-label="cerrar panel imagen" ><i class="fas fa-times"></i></button>
     <section>
         <h2>IMAGEN</h2>
@@ -148,7 +148,7 @@
     <!-- FIN PANEL IMAGEN -->
 
     <!-- INICIO PANEL TEXTO -->
-    <aside id="panel-texto" class="no-mostrar-panel">
+    <aside id="panel-texto" class="no-mostrar-panel ancho-aside lateral">
         <button id="cierre-panel-texto" class="close" aria-label="cerrar panel texto"><i class="fas fa-times"></i></button>
         <section>
             <h2>TEXTO</h2>
@@ -156,24 +156,24 @@
             <div>
                 <h3>SUPERIOR</h3>
                 <textarea name="texto-superior" id="texto-superior-textarea" cols="30" rows="1"></textarea>
-                <div>
+                <div class="check-sin-texto">
                     <input type="checkbox" id="sin-texto-superior">
-                    <label for="sin-texto-superior">Sin texto superior</label>
+                    <label for="sin-texto-superior" class="label-sin-texto">Sin texto superior</label>
                 </div>   
             </div>
             <!----------- TEXTO INFERIOR ----------->
             <div>
                 <h3>INFERIOR</h3>
                 <textarea name="texto-inferior" id="texto-inferior-textarea" cols="30" rows="1"></textarea>
-                <div>
-                    <input type="checkbox" id="sin-texto-inferior">
-                    <label for="sin-texto-inferior">Sin texto inferior</label>
+                <div class="check-sin-texto">
+                    <input type="checkbox" id="sin-texto-inferior" class="chekbox">
+                    <label for="sin-texto-inferior" class="label-sin-texto">Sin texto inferior</label>
                 </div>   
             </div>
             <!--------------  FUENTE --------------->    
-            <div>
+            <div class="fuente">
                 <h3>FUENTE</h3>
-                <select>
+                <select class="fuente-select">
                     <option value="Arial">Arial</option>
                     <option value="Arial Black">Arial Black</option>
                     <option value="American Typewriter">American Typewriter</option>
@@ -185,7 +185,7 @@
                     <option value="Times New Roman">Times New Roman</option>
                 </select>
                 
-                <div>
+                <div class="tamanio-alineacion">
                     <!-- tamaño letra-->
                     <input type="number" min="12" value="40">
                     <!-- botones alineación de texto-->
