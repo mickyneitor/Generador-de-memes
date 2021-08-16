@@ -231,7 +231,3 @@ input[type="range"] {
   width:215px; */
 }
 
-.zIndex{
-  position: relative;
-  z-index: 1;
-}
