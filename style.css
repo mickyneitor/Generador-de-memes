@@ -154,6 +154,7 @@ input, select, textarea {
   border: none;
   border-radius: 4px;
   height: 33px;
+  width: 100%;
   padding: 3px;
   
 }
@@ -255,4 +256,45 @@ input[type="range"] {
     display: none;
   }
 
+/* Acomodar estilos del aside*/
+
+.ancho-main-escritorio, .ancho-header-escritorio {
+  width: 75%;
+}
+
+.ancho-aside {
+  width: 25%;
+}
+
+.lateral {
+    padding: 2%;
+}
+
+.check-sin-texto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+}
+
+.label-sin-texto {
+  padding: 10px;
+}
+
+.fuente-select {
+  margin-bottom: 10px;
+  
+}
+
+.tamanio-alineacion { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
