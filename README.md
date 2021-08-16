@@ -17,4 +17,4 @@ El TP se hizo de manera grupal con las siguientes desarrolladoras:
    
    
    
-Pofesora: Malena Rey ♔
+Pofesora: Malena Rey 
