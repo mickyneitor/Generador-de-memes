@@ -258,7 +258,7 @@ input[type="range"] {
 
 /* Acomodar estilos del aside*/
 
-.ancho-main-escritorio, .ancho-header-escritorio {
+.ancho-main, .ancho-header {
   width: 75%;
 }
 
@@ -296,5 +296,50 @@ input[type=checkbox]{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+
+/* Asides en la vista mobile */
+
+/* Media Query */
+
+@media(max-width:480px){
+  #panel-texto, #panel-imagen {
+    height: 100vh;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .close{
+    display: block;
+  }
+
+  .btn-cierre {
+    display: contents;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .subtitulo-panel{
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .ancho-header, .ancho-main{
+    width: 100%;
+  }
+
+  .meme-container{
+    width: 75%;
+    height: 400px;
+  }
+
+  .tituloTP {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  
 }
 
