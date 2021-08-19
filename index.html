@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!--links fontawesome (crear kit) para botones imagen, texto y modo oscuro-->
     <script src="https://kit.fontawesome.com/33e038a340.js" crossorigin="anonymous"></script>
-    <title>TP2 - Generador de memes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
+    <title>Generador de memes</title>
 </head>
 
 <body>
@@ -32,21 +33,21 @@
 
     <!-- INICIO SECCION DE MEME -->
     <main class="ancho-main">
-        <section class="meme-container">
+        <div class="meme-container" id="meme-container">
           <div class="top-text" id="texto-sup-meme">
               <p>TOP TEXT</p>
           </div>
-          <div class="img-src divMeme" id="contenedor-img-meme"><img  src="" alt="aqui estara la imagen del meme">
+          <div class="img-src divMeme" id="contenedor-img-meme">
+              <img  src="" alt="aqui estara la imagen del meme">
           </div>
           <div class="bottom-text" id="texto-inf-meme">
               <p>BOTTOM TEXT</p>
           </div>
-
-        </section>
+        </div>
 
         <button type="button" class="descargar-imagen" id="boton-descargar" aria-label="Descargar meme">
             <i class="fas fa-download"></i>
-            Disfrute su meme
+            <p class="download-text" aria-hidden="true">Disfrute su meme</p>
         </button>
 
     </main>
@@ -263,6 +264,7 @@
     <!-- FIN SECCION PANEL TEXTO -->
 
     <script src="app.js"></script>
+    
 </body>
 
 </html>

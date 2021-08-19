@@ -3,6 +3,7 @@
 const inputURL = document.getElementById("input-url");
 const imagenDelMeme = document.querySelector("img");
 const contenedorImgMeme = document.getElementById("contenedor-img-meme");
+const memeContainer = document.getElementById("meme-container");
 
 const textoSuperiorTextarea = document.getElementById("texto-superior-textarea");
 const textoInferiorTextarea = document.getElementById("texto-inferior-textarea");
@@ -20,6 +21,7 @@ const panelTexto = document.getElementById('panel-texto');
 const cierrePanelImagen = document.getElementById("cierre-panel-imagen");
 const cierrePanelTexto = document.getElementById("cierre-panel-texto");
 
+const botonDescargar = document.getElementById("boton-descargar");
 
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
@@ -148,3 +150,11 @@ cierrePanelTexto.addEventListener ('click', () => {
 });
 
 
+// Botoncito de descarga meme 
+
+botonDescargar.onclick = () => {
+domtoimage.toBlob(document.getElementById('meme-container'))
+    .then(function (blob) {
+        window.saveAs(blob, 'meme.png');
+    });
+}  
