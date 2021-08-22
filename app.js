@@ -168,3 +168,23 @@ tamanioFuente.addEventListener('input' , () => {
     textoInferiorMeme.style.fontSize = `${fontSizeValue}px`;
     textoSuperiorMeme.style.fontSize = `${fontSizeValue}px`;
 });
+
+// Modo oscuro
+
+const modoOscuro = document.querySelector(".modo-oscuro")
+const modoClaro = document.querySelector(".modo-claro")
+console.log(modoClaro)
+console.log(modoOscuro)
+
+const botonModos = document.getElementById("botonClaroNoMostrar")
+
+botonModos.addEventListener("click", () => {modoOscuro.classList.toggle("modo-claro");
+modoOscuro.classList.toggle("modo-oscuro");
+
+if(botonModos.textContent == "Modo Claro"){
+  botonModos.textContent = "Modo Oscuro"
+}
+else{
+    botonModos.textContent = "Modo Claro"
+}
+})
