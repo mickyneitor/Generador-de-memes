@@ -75,7 +75,7 @@ main {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    
+    color: black;
     
   }
 
@@ -298,7 +298,10 @@ input[type=checkbox]{
   align-items: center;
 }
 
-
+.reestablecer-filtros {
+  color: black;
+  padding: 5px;
+}
 /* Asides en la vista mobile */
 
 /* Media Query */
