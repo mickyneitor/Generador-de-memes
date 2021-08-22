@@ -20,6 +20,7 @@ const panelTexto = document.getElementById('panel-texto');
 const cierrePanelImagen = document.getElementById("cierre-panel-imagen");
 const cierrePanelTexto = document.getElementById("cierre-panel-texto");
 
+const fuenteSelect = document.getElementById('fuente-select');
 
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
@@ -147,4 +148,12 @@ cierrePanelTexto.addEventListener ('click', () => {
     panelTexto.classList.add('no-mostrar-panel');
 });
 
+// Seleccionar tipo de fuente
+
+fuenteSelect.addEventListener('change', () => {
+
+    const fontValue = fuenteSelect.value;
+    textoInferiorMeme.style.fontFamily = `${fontValue}`;
+    textoSuperiorMeme.style.fontFamily = `${fontValue}`;
+});
 
