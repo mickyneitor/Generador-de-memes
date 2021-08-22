@@ -22,6 +22,9 @@ const cierrePanelTexto = document.getElementById("cierre-panel-texto");
 
 const fuenteSelect = document.getElementById('fuente-select');
 
+const tamanioFuente = document.getElementById('tamanio-fuente');
+
+
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
     
@@ -157,3 +160,11 @@ fuenteSelect.addEventListener('change', () => {
     textoSuperiorMeme.style.fontFamily = `${fontValue}`;
 });
 
+// Tamaño de la fuente
+
+tamanioFuente.addEventListener('input' , () => {
+
+    const fontSizeValue = tamanioFuente.value;
+    textoInferiorMeme.style.fontSize = `${fontSizeValue}px`;
+    textoSuperiorMeme.style.fontSize = `${fontSizeValue}px`;
+});
