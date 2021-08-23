@@ -6,10 +6,12 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
+  /*color: #fff;*/
 }
 
 body {
   background-color: #393e49;
+   /* color: #fff;*/
 }
 
 header {
@@ -17,9 +19,11 @@ header {
   align-items: center;
   flex-direction: column;
   background: black;
+  /* background: #191e2b;*/
 }
 
 h1 {
+  /*color: #fff;*/
   color: blanchedalmond;
   font-size: 40px;
   margin-top: 5px;
@@ -32,9 +36,11 @@ h1 {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.boton{
+.boton .modo-oscuro,
+.modo-claro{
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -43,9 +49,27 @@ h1 {
   padding: 10px;
   margin: 2.5px;
   color: white;
+  /* color: #fff;*/
   background-color: transparent;
 }
 
+.modo-oscuro header{
+  background-color: #191e2b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.modo-claro header{
+    background-color: #e0e0e0;
+    color: #585858;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
 
 /*------   main   ------*/
   
@@ -57,7 +81,27 @@ main {
   height: 100vh;
 }
 
-  /*----------- seccion meme  ---------*/
+.modo-oscuro main{
+  background-color: #30343f;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.modo-claro main{
+  background-color: #eee;
+  color: #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*----------- seccion meme  ---------*/
 
   .meme-container {
     width: 100%;
@@ -75,7 +119,7 @@ main {
     justify-content: center;
     font-size: 30px;
     font-weight: bolder;
-    
+    color: black;
     
   }
 
@@ -298,7 +342,10 @@ input[type=checkbox]{
   align-items: center;
 }
 
-
+.reestablecer-filtros {
+  color: black;
+  padding: 5px;
+}
 /* Asides en la vista mobile */
 
 /* Media Query */

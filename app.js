@@ -21,7 +21,12 @@ const panelTexto = document.getElementById('panel-texto');
 const cierrePanelImagen = document.getElementById("cierre-panel-imagen");
 const cierrePanelTexto = document.getElementById("cierre-panel-texto");
 
-const botonDescargar = document.getElementById("boton-descargar");
+
+const fuenteSelect = document.getElementById('fuente-select');
+
+const tamanioFuente = document.getElementById('tamanio-fuente');
+
+
 
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
@@ -149,8 +154,47 @@ cierrePanelTexto.addEventListener ('click', () => {
     panelTexto.classList.add('no-mostrar-panel');
 });
 
+// Seleccionar tipo de fuente
+
+fuenteSelect.addEventListener('change', () => {
+
+    const fontValue = fuenteSelect.value;
+    textoInferiorMeme.style.fontFamily = `${fontValue}`;
+    textoSuperiorMeme.style.fontFamily = `${fontValue}`;
+});
+
+// Tamaño de la fuente
+
+tamanioFuente.addEventListener('input' , () => {
+
+    const fontSizeValue = tamanioFuente.value;
+    textoInferiorMeme.style.fontSize = `${fontSizeValue}px`;
+    textoSuperiorMeme.style.fontSize = `${fontSizeValue}px`;
+});
+
+// Modo oscuro
+
+const modoOscuro = document.querySelector(".modo-oscuro")
+const modoClaro = document.querySelector(".modo-claro")
+console.log(modoClaro)
+console.log(modoOscuro)
+
+const botonModos = document.getElementById("botonClaroNoMostrar")
+
+botonModos.addEventListener("click", () => {modoOscuro.classList.toggle("modo-claro");
+modoOscuro.classList.toggle("modo-oscuro");
+
+if(botonModos.textContent == "Modo Claro"){
+  botonModos.textContent = "Modo Oscuro"
+}
+else{
+    botonModos.textContent = "Modo Claro"
+}
+})
 
 // Botoncito de descarga meme 
+
+const botonDescargar = document.getElementById("boton-descargar");
 
 botonDescargar.onclick = () => {
 domtoimage.toBlob(document.getElementById('meme-container'))

@@ -17,7 +17,7 @@
     <title>Generador de memes</title>
 </head>
 
-<body>
+<body class="modo-oscuro" id="body">
 
     <!-- INICIO HEADER -->
     <header class="ancho-header">
@@ -25,7 +25,12 @@
         <div class="panelDeBotones">
             <button class="boton" id="boton-imagen"><i class="fas fa-file-image"></i> Imagen</button>
             <button class="boton" id="boton-texto"><i class="fas fa-font"></i> Texto</button>
-            <button class="boton"><i class="fas fa-lightbulb"></i> Modo oscuro</button>
+            <!--Cambiar Modo-->
+            <!-- <button class="modo-oscuro" id="botonOscuroMostrar">
+            <i class="far fa-moon"></i>Modo Oscuro</button>-->
+            <button class="modo-claro" id="botonClaroNoMostrar">
+              <i class="far fa-sun"></i>Modo Claro
+            </button>   
         </div>
     </header>
     <!-- FIN HEADER -->
@@ -62,20 +67,9 @@
             <h3>URL</h3>
             <input type="text" id="input-url">
         </div>
-        <!------------- FONDO ----------->
-        <h3>FONDO</h3>
-        <div>
+        
+  
             <div>
-                <h3>URL</h3>
-                <input type="text">
-            </div>
-            <!------------- FONDO ----------->
-            <h3>FONDO</h3>
-            <div>
-                <div>
-                    <input type="color">
-                    <span>#color</span>
-                </div>
                 <!------------- FONDO ----------->
                 <div class="panel-fondo">
                     <h3 class="titulo-fondo">FONDO</h3>
@@ -154,7 +148,7 @@
                         <input type="range" id="invert" min="0" max="1" step="0.1" value="1">
                     </div>
                 </div>
-                <button>Restablecer filtros</button>
+                <button class="reestablecer-filtros">Restablecer filtros</button>
         </section>
     </aside>
     <!-- FIN PANEL IMAGEN -->
@@ -186,7 +180,7 @@
             <!--------------  FUENTE --------------->    
             <div class="fuente">
                 <h3>FUENTE</h3>
-                <select class="fuente-select">
+                <select class="fuente-select" id="fuente-select">
                     <option value="Arial">Arial</option>
                     <option value="Arial Black">Arial Black</option>
                     <option value="American Typewriter">American Typewriter</option>
@@ -201,7 +195,7 @@
 
                 <div class="tamanio-alineacion">
                     <!-- tamaño letra-->
-                    <input type="number" min="12" value="40">
+                    <input type="number" min="12" max="60" value="40" class="font-size" id="tamanio-fuente">
                     <!-- botones alineación de texto-->
                     <div>
                         <button><i class="fas fa-align-left"></i></button>
