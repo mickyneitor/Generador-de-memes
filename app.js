@@ -210,7 +210,8 @@ const textoCentrado = document.getElementById("texto-centrado")
 const textoDerecha = document.getElementById("texto-derecha")
 
 textoIzquierda.addEventListener('click', () => {
-    textoSuperiorMeme.style.textAlign = "left";
+    //textoSuperiorMeme y textoInferiorMeme estan declarados en la línea 10 y 11
+    textoSuperiorMeme.style.textAlign = "left"; 
     console.log(textoIzquierda)
     textoInferiorMeme.style.textAlign = "right";
 });
