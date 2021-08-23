@@ -202,3 +202,25 @@ domtoimage.toBlob(document.getElementById('meme-container'))
         window.saveAs(blob, 'meme.png');
     });
 }  
+
+
+//Botones de alineacion de texto - NO FUNCIONAN :(
+const textoIzquierda = document.getElementById("texto-izquierda")
+const textoCentrado = document.getElementById("texto-centrado")
+const textoDerecha = document.getElementById("texto-derecha")
+
+textoIzquierda.addEventListener('click', () => {
+    textoSuperiorMeme.style.textAlign = "left";
+    console.log(textoIzquierda)
+    textoInferiorMeme.style.textAlign = "right";
+});
+
+textoCentrado.addEventListener('click', () => {
+    textoSuperiorMeme.style.textAlign = "center";
+    textoInferiorMeme.style.textAlign = "center";
+});
+
+textoDerecha.addEventListener('click', () => {
+    textoSuperiorMeme.style.textAlign = "right";
+    textoInferiorMeme.style.textAlign = "right";
+})
