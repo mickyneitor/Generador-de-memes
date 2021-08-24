@@ -204,24 +204,24 @@ domtoimage.toBlob(document.getElementById('meme-container'))
 }  
 
 
-//Botones de alineacion de texto - NO FUNCIONAN :(
+//Botones de alineacion de texto 
 const textoIzquierda = document.getElementById("texto-izquierda")
 const textoCentrado = document.getElementById("texto-centrado")
 const textoDerecha = document.getElementById("texto-derecha")
 
 textoIzquierda.addEventListener('click', () => {
     //textoSuperiorMeme y textoInferiorMeme estan declarados en la línea 10 y 11
-    textoSuperiorMeme.style.textAlign = "left"; 
+    textoSuperiorMeme.style.justifyContent = "flex-start"; 
     console.log(textoIzquierda)
-    textoInferiorMeme.style.textAlign = "right";
+    textoInferiorMeme.style.justifyContent = "flex-start";
 });
 
 textoCentrado.addEventListener('click', () => {
-    textoSuperiorMeme.style.textAlign = "center";
-    textoInferiorMeme.style.textAlign = "center";
+    textoSuperiorMeme.style.justifyContent = "center";
+    textoInferiorMeme.style.justifyContent = "center";
 });
 
 textoDerecha.addEventListener('click', () => {
-    textoSuperiorMeme.style.textAlign = "right";
-    textoInferiorMeme.style.textAlign = "right";
+    textoSuperiorMeme.style.justifyContent = "flex-end";
+    textoInferiorMeme.style.justifyContent = "flex-end";
 })
