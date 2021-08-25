@@ -35,4 +35,6 @@ Puedes ver un ejemplo funcional del proyecto siguiendo este link https://fronten
 <br>
 <br> 
 
-👩‍🏫 Pofesora titular: Malena Rey 👑
+👩‍🏫 Pofesora Titular: Malena Rey 👑
+<br>
+👩‍🏫 Pofesora Asistente: Ivana Croxcatto
