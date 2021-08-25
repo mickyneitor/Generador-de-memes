@@ -73,6 +73,22 @@ hueRotationInput.addEventListener('change', hacerFuncionarFiltros)
 saturateInput.addEventListener('change', hacerFuncionarFiltros)
 invertInput.addEventListener('change', hacerFuncionarFiltros)
 
+// Restablecer filtros
+const restablecerFiltros = document.getElementById("limpiar-filtros");
+
+restablecerFiltros.addEventListener("click", () =>{
+    divMemeImg.style.filter = brightnessInput.value = "1";
+                              opacityInput.value = "1";
+                              contrastInput.value = "100";
+                              blurInput.value = "1";
+                              grayScaleInput.value = "0";
+                              sepiaInput.value = "0";
+                              hueRotationInput.value = "0";
+                              saturateInput.value = "100";
+                              invertInput.value = "0";
+                              hacerFuncionarFiltros();  
+});
+
 // Escribir texto en la parte superior del recuadro del meme
 
 textoSuperiorTextarea.addEventListener('keyup' , () => {
