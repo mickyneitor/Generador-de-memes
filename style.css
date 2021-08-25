@@ -5,32 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  /*color: #fff;*/
-}
-
-body {
-  background-color: #393e49;
-   /* color: #fff;*/
-}
-
-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: black;
-  /* background: #191e2b;*/
 }
 
 h1 {
-  /*color: #fff;*/
-  color: blanchedalmond;
   font-size: 40px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-
 
 .panelDeBotones{
   display: flex;
@@ -38,15 +19,10 @@ h1 {
   margin-bottom: 5px;
   cursor: pointer;
 }
-.boton{
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  margin: 2.5px;
-}
 
-.boton .modo-oscuro,
-.modo-claro{
+.boton,
+.modo-claro,
+.modo-oscuro{
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -54,27 +30,7 @@ h1 {
   border: none;
   padding: 10px;
   margin: 2.5px;
-  color: white;
-  /* color: #fff;*/
   background-color: transparent;
-}
-
-.modo-oscuro header{
-  background-color: #191e2b;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.modo-claro header{
-    background-color: #e0e0e0;
-    color: #585858;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-    cursor: pointer;
 }
 
 /*------   main   ------*/
@@ -162,7 +118,6 @@ main {
 /*----------- Aside  ---------*/
 
 aside {
-  background-color: rgb(42, 40, 50);
   position: fixed;
   top: 0;
   bottom: -100%;
@@ -170,7 +125,6 @@ aside {
   z-index: 2;
   transition: 0.9s;
 }
-
 
 .panel {
   display: flex;
@@ -199,7 +153,6 @@ h3 {
 }
 
 input, select, textarea {
-  background-color: #353a44;
   border: none;
   border-radius: 4px;
   height: 33px;
@@ -239,7 +192,6 @@ span #input-background-text {
 
 
 input[type="color"] {
-	
 	border: none;
 	width: 22px;
   height: 22px;
@@ -253,18 +205,15 @@ input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
 
-
 .input-color {
   display: flex;
   height: 36px;
   flex-direction: row;
   align-items: center;
-  background-color: #393e49;
   padding: 0 2px;
   width: 50%;
   margin-right: 10px;
 }
-
 
 label {
   width: 100%;
@@ -280,12 +229,9 @@ input[type="range"] {
   margin: 10px 0px;
   background-color: #5a5d68;
   width: 100%;
-  /* border-radius: 10px;
-  margin: 10px 0;
-  background-color: #5a5d68;
-  appearance: none;
-  width:215px; */
+  
 }
+
 
   /* Acomodar imagen del meme */
 
@@ -349,8 +295,11 @@ input[type=checkbox]{
 }
 
 .reestablecer-filtros {
-  color: black;
   padding: 5px;
+}
+.modo-oscuro .reestablecer-filtros{
+  background-color: #393e49;
+  color: #fff;
 }
 /* Asides en la vista mobile */
 
@@ -396,4 +345,51 @@ input[type=checkbox]{
   
 }
 
+/*-------MODO OSCURO--------*/
+.modo-oscuro body{
+  background-color: #252935;
+}
+.modo-claro body{
+  background-color: #eee;
+}
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #191e2b;
+}
 
+.modo-oscuro header{
+  background-color: #191e2b;
+  color: #fff;
+}
+.modo-oscuro button{
+  color: #fff;
+}
+.modo-claro header{
+  background-color: #e0e0e0;
+  color: #585858;
+}
+.modo-oscuro aside{
+  background-color: #252935;
+  color:#fff
+}
+.modo-claro aside{
+  background-color: #fafafa;
+  color: #646464;
+}
+.modo-oscuro input, select, textarea{
+  background-color: #393e49;
+  color: #fff;
+}
+.modo-claro input, select, textarea{
+  background-color: #e0e0e0;
+  color: #585858;
+}
+.modo-oscuro label.input-color{
+  background-color: #393e49;
+}
+.modo-claro label.input-color{
+  background-color: #e0e0e0;
+}
+/*-------FIN MODO OSCURO---------*/
