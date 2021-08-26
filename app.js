@@ -259,3 +259,15 @@ fondoLetra.addEventListener('input', ()=>{
     textoSuperiorMeme.style.backgroundColor = colorValor;
     textoInferiorMeme.style.backgroundColor = colorValor;
 });
+
+//Fondo transparente
+fondoTransparente.addEventListener('change', () => {
+    if(fondoTransparente.checked){
+        textoSuperiorMeme.style.backgroundColor = 'transparent';
+        textoInferiorMeme.style.backgroundColor = 'transparent';
+    }else{
+        textoSuperiorMeme.style.backgroundColor = `${fondoLetra.value}`;
+        textoInferiorMeme.style.backgroundColor = `${fondoLetra.value}`;
+    }
+
+});
