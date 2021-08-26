@@ -204,28 +204,23 @@
                     </div>
                 </div>
                 <!------------- COLOR ---------------->
-                <div>
+                    
+                <section class="color-fondo">    
                     <!-- color del texto-->
-                    <div>
-                        <h3>COLOR</h3>
-                        <div>
-                            <input type="color">
-                            <span>#color</span>
-                        </div>
+                    <div class="caja-color-fondo">
+                        <label for="colorLetra" class="label-color" aria-label="Color del texto">COLOR</label>
+                        <input type="color" id="color-letra" value="#000000" aria-label="Boton color del texto">
                     </div>
                     <!-- color del fondo-->
-                    <div>
-                        <h3>FONDO</h3>
-                        <div>
-                            <input type="color">
-                            <span>#color</span>
-                        </div>
+                    <div class="caja-color-fondo">
+                        <label class="label-color" for="fondoLetra">FONDO</label>
+                        <input type="color" id="fondo-letra" value="#FFFFFF" aria-label="Color del fondo del texto">
                     </div>
-                    <div>
-                        <input type="checkbox">
-                        <label for="">Fondo transparente</label>
+                    <div class="sin-fondo">
+                        <input type="checkbox" id="fondo-transparente" aria-label="Fondo del texto transparente">
+                        <label for="fondoTransparente" class="transparente">Fondo transparente</label>
                     </div>
-                </div>
+                </section>
                 <!------------ CONTORNO--------------->
                 <div>
                     <h3>CONTORNO</h3>

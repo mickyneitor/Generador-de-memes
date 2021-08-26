@@ -26,6 +26,9 @@ const fuenteSelect = document.getElementById('fuente-select');
 
 const tamanioFuente = document.getElementById('tamanio-fuente');
 
+const colorLetra = document.getElementById('color-letra');
+const fondoLetra = document.getElementById('fondo-letra');
+const fondoTransparente = document.getElementById('fondo-transparente');
 
 
 // URL de la imagen asociada a la sección del meme
@@ -241,3 +244,11 @@ textoDerecha.addEventListener('click', () => {
     textoSuperiorMeme.style.justifyContent = "flex-end";
     textoInferiorMeme.style.justifyContent = "flex-end";
 })
+
+//Color de letra
+
+colorLetra.addEventListener('input', ()=>{
+    const valorColor = colorLetra.value;
+    textoSuperiorMeme.style.color = valorColor;
+    textoInferiorMeme.style.color = valorColor;
+});
