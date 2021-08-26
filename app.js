@@ -252,3 +252,10 @@ colorLetra.addEventListener('input', ()=>{
     textoSuperiorMeme.style.color = valorColor;
     textoInferiorMeme.style.color = valorColor;
 });
+
+//Color del fondo del texto
+fondoLetra.addEventListener('input', ()=>{
+    const colorValor = fondoLetra.value;
+    textoSuperiorMeme.style.backgroundColor = colorValor;
+    textoInferiorMeme.style.backgroundColor = colorValor;
+});
