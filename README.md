@@ -20,7 +20,7 @@ Puedes ver un ejemplo funcional del proyecto siguiendo este link https://fronten
 <br>
 <br>
 
-🖥🖱️ El TP se hizo de manera grupal con las siguientes desarrolladoras: 
+�🖱️ El TP se hizo de manera grupal con las siguientes desarrolladoras: 
 
    💚 Eliana Rojas  👾 https://github.com/eli-ana-rjs
 
