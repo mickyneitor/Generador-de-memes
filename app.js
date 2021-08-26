@@ -26,6 +26,9 @@ const fuenteSelect = document.getElementById('fuente-select');
 
 const tamanioFuente = document.getElementById('tamanio-fuente');
 
+const colorLetra = document.getElementById('color-letra');
+const fondoLetra = document.getElementById('fondo-letra');
+const fondoTransparente = document.getElementById('fondo-transparente');
 
 
 // URL de la imagen asociada a la sección del meme
@@ -241,3 +244,30 @@ textoDerecha.addEventListener('click', () => {
     textoSuperiorMeme.style.justifyContent = "flex-end";
     textoInferiorMeme.style.justifyContent = "flex-end";
 })
+
+//Color de letra
+
+colorLetra.addEventListener('input', ()=>{
+    const valorColor = colorLetra.value;
+    textoSuperiorMeme.style.color = valorColor;
+    textoInferiorMeme.style.color = valorColor;
+});
+
+//Color del fondo del texto
+fondoLetra.addEventListener('input', ()=>{
+    const colorValor = fondoLetra.value;
+    textoSuperiorMeme.style.backgroundColor = colorValor;
+    textoInferiorMeme.style.backgroundColor = colorValor;
+});
+
+//Fondo transparente
+fondoTransparente.addEventListener('change', () => {
+    if(fondoTransparente.checked){
+        textoSuperiorMeme.style.backgroundColor = 'transparent';
+        textoInferiorMeme.style.backgroundColor = 'transparent';
+    }else{
+        textoSuperiorMeme.style.backgroundColor = `${fondoLetra.value}`;
+        textoInferiorMeme.style.backgroundColor = `${fondoLetra.value}`;
+    }
+
+});
