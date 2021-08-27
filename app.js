@@ -34,6 +34,10 @@ const sinContorno = document.getElementById('sin-contorno');
 const contornoClaro = document.getElementById('contorno-claro');
 const contornoOscuro = document.getElementById('contorno-oscuro');
 
+const espaciadoEnLetra = document.getElementById('espaciado-en-letra');
+
+const interlineadoValor = document.getElementById('interlineado-valor');
+
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
     
@@ -290,3 +294,18 @@ contornoOscuro.addEventListener('click', ()=>{
     textoSuperiorMeme.style.textShadow = '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black';
     textoInferiorMeme.style.textShadow = '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black';
 });
+
+//Espaciado
+
+espaciadoEnLetra.addEventListener('change', () => {
+    const espaciado = espaciadoEnLetra.value;
+    textoSuperiorMeme.style.padding = `${espaciado}px 50px`;
+    textoInferiorMeme.style.padding = `${espaciado}px 50px`;
+});
+
+//Interlineado 
+
+interlineadoValor.addEventListener("change", () => {
+    textoSuperiorMeme.style.lineHeight = `${interlineadoValor[interlineadoValor.selectedIndex].value}`;
+    textoInferiorMeme.style.lineHeight = `${interlineadoValor[interlineadoValor.selectedIndex].value}`;
+})
