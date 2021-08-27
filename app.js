@@ -30,6 +30,9 @@ const colorLetra = document.getElementById('color-letra');
 const fondoLetra = document.getElementById('fondo-letra');
 const fondoTransparente = document.getElementById('fondo-transparente');
 
+const sinContorno = document.getElementById('sin-contorno');
+const contornoClaro = document.getElementById('contorno-claro');
+const contornoOscuro = document.getElementById('contorno-oscuro');
 
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
@@ -270,4 +273,20 @@ fondoTransparente.addEventListener('change', () => {
         textoInferiorMeme.style.backgroundColor = `${fondoLetra.value}`;
     }
 
+});
+
+//Contorno de la letra
+sinContorno.addEventListener('click', ()=>{
+    textoSuperiorMeme.style.textShadow = 'none';
+    textoInferiorMeme.style.textShadow = 'none';
+});
+
+contornoClaro.addEventListener('click', ()=>{
+    textoSuperiorMeme.style.textShadow = '-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white';
+    textoInferiorMeme.style.textShadow = '-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white';
+});
+
+contornoOscuro.addEventListener('click', ()=>{
+    textoSuperiorMeme.style.textShadow = '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black';
+    textoInferiorMeme.style.textShadow = '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black';
 });
