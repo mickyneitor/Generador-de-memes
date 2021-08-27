@@ -207,28 +207,27 @@
                     
                 <section class="color-fondo">    
                     <!-- color del texto-->
-                    <div class="caja-color-fondo">
+                    <div class="box-aside color">
                         <label for="colorLetra" class="label-color" aria-label="Color del texto">COLOR</label>
                         <input type="color" id="color-letra" value="#000000" aria-label="Boton color del texto">
                     </div>
                     <!-- color del fondo-->
-                    <div class="caja-color-fondo">
+                    <div class="box-aside color-fondo">
                         <label class="label-color" for="fondoLetra">FONDO</label>
                         <input type="color" id="fondo-letra" value="#FFFFFF" aria-label="Color del fondo del texto">
                     </div>
-                    <div class="sin-fondo">
+                    <div class="box-aside sin-fondo">
                         <input type="checkbox" id="fondo-transparente" aria-label="Fondo del texto transparente">
                         <label for="fondoTransparente" class="transparente">Fondo transparente</label>
                     </div>
                 </section>
                 <!------------ CONTORNO--------------->
-                <div>
-                    <h3>CONTORNO</h3>
-                    <div>
-                        <button>Ninguno</button>
-                        <button>Claro</button>
-                        <button>Oscuro</button>
-                    </div>
+                <div class="box-aside contorno-letra">
+                    <p class="subtitulo">Contorno</p>
+                    <button type="button" class="boton-contorno-letra" id="sin-contorno" aria-label="Boton para letra sin contorno">Ninguno</button>
+                    <button type="button" class="boton-contorno-letra" id="contorno-claro" aria-label="Boton para letra con contorno claro">Claro</button>
+                    <button type="button" class="boton-contorno-letra" id="contorno-oscuro" aria-label="Boton para letra con contorno oscuro">Oscuro</button>
+                    
                 </div>
                 <!------------- ESPACIADO ------------>
                 <div>
