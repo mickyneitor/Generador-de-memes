@@ -36,6 +36,8 @@ const contornoOscuro = document.getElementById('contorno-oscuro');
 
 const espaciadoEnLetra = document.getElementById('espaciado-en-letra');
 
+const interlineadoValor = document.getElementById('interlineado-valor');
+
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
     
@@ -300,3 +302,10 @@ espaciadoEnLetra.addEventListener('change', () => {
     textoSuperiorMeme.style.padding = `${espaciado}px 50px`;
     textoInferiorMeme.style.padding = `${espaciado}px 50px`;
 });
+
+//Interlineado 
+
+interlineadoValor.addEventListener("change", () => {
+    textoSuperiorMeme.style.lineHeight = `${interlineadoValor[interlineadoValor.selectedIndex].value}`;
+    textoInferiorMeme.style.lineHeight = `${interlineadoValor[interlineadoValor.selectedIndex].value}`;
+})
