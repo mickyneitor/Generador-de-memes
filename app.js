@@ -54,16 +54,21 @@ const estiloDeFondo = document.getElementById("select-background")
 const imagenMeme = document.getElementById("meme-img")
 
 
-inputColor.oninput = () => {
+inputColor.addEventListener('input', () => {
+    console.log('Esta entrando a la función inputColor')
+    const inputColorValue = inputColor.value;
+    contenedorImgMeme.style.backgroundColor = inputColorValue;
+    inputColorValue.innerHTML = inputColorValue;
 
-     //inputColor.value.innerHTML = inputColor
-     imagenMeme.style.backgroundColor = inputColor.value
-}
+})
 
 estiloDeFondo.onchange = () => {
-    imagenMeme.style.backgroundBlendMode = estiloDeFondo.value
+    const valueEstiloDeFondo = estiloDeFondo.value
+    contenedorImgMeme.style.backgroundBlendMode = valueEstiloDeFondo
        
 }
+
+
 
 
 
