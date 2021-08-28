@@ -247,6 +247,12 @@ input[type="range"] {
     height: 100%;
   } 
 
+  .estilos-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   /* Desaparecer texto del meme */
 
   .no-mostrar-texto, .no-mostrar-panel {
