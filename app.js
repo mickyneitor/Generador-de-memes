@@ -42,10 +42,10 @@ const interlineadoValor = document.getElementById('interlineado-valor');
 inputURL.onkeyup = (event) => {
     
     event.preventDefault();
-
+    
     const inputUrlValue = inputURL.value;
-    imagenDelMeme.src=inputUrlValue;
-
+   // imagenDelMeme.src=inputUrlValue;
+   contenedorImgMeme.style.backgroundImage = `url(${inputUrlValue})`;
 }
 
 // ---- FONDO-----
@@ -55,8 +55,9 @@ const imagenMeme = document.getElementById("meme-img")
 
 
 inputColor.oninput = () => {
-    //inputColor.value.innerHTML = inputColor
-    imagenMeme.style.backgroundColor = inputColor.value
+
+     //inputColor.value.innerHTML = inputColor
+     imagenMeme.style.backgroundColor = inputColor.value
 }
 
 estiloDeFondo.onchange = () => {
