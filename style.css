@@ -33,6 +33,11 @@ h1 {
   background-color: transparent;
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+}
+
 /*------   main   ------*/
   
 main {
@@ -230,15 +235,28 @@ label {
   border-radius: 3px;
 }
 
-input[type="range"] {
-  height: 20px;
-  border-radius: 10px;
-  margin: 10px 0px;
-  background-color: #5a5d68;
-  width: 100%;
-  
+input[type='range'] {
+  width: 95%;
+  height: 0.65rem;
+  appearance: none;
+  border-radius: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 6px 0;
 }
 
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #585858;
+  cursor: pointer;
+}
+
+.icono {
+  margin-right: 8px;
+}
 
   /* Acomodar imagen del meme */
 
