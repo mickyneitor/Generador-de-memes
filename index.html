@@ -195,37 +195,46 @@
                     <!-- tamaño letra-->
                     <input type="number" min="12" max="60" value="40" class="font-size" id="tamanio-fuente">
                     <!-- botones alineación de texto-->
-                    <div>
-                        <button id="texto-izquierda"><i class="fas fa-align-left"></i></button>
-                        <button id="texto-centrado"><i class="fas fa-align-center"></i></button>
-                        <button id="texto-derecha"><i class="fas fa-align-right"></i></button>
+                    <div class="alineacion-texto">
+                        <button class="boton-alineacion" id="texto-izquierda"><i class="fas fa-align-left"></i></button>
+                        <button class="boton-alineacion" id="texto-centrado"><i class="fas fa-align-center"></i></button>
+                        <button class="boton-alineacion" id="texto-derecha"><i class="fas fa-align-right"></i></button>
                     </div>
                 </div>
                 <!------------- COLOR ---------------->
                     
                 <section class="color-fondo">    
                     <!-- color del texto-->
+                   
                     <div class="box-aside color">
                         <label for="colorLetra" class="label-color" aria-label="Color del texto">COLOR</label>
+                        <div class="panel-control-color">
                         <input type="color" id="color-letra" value="#000000" aria-label="Boton color del texto">
+                        <span id="textoColor">#000000</span>
+                        </div>
                     </div>
                     <!-- color del fondo-->
-                    <div class="box-aside color-fondo">
+                    <div class="box-aside color-del-fondo">
                         <label class="label-color" for="fondoLetra">FONDO</label>
+                        <div class="panel-control-color">
                         <input type="color" id="fondo-letra" value="#FFFFFF" aria-label="Color del fondo del texto">
+                        <span id="colorLabelFondo"> #FFFFFF</span>
+                        </div>
                     </div>
+                  
                     <div class="box-aside sin-fondo">
                         <input type="checkbox" id="fondo-transparente" aria-label="Fondo del texto transparente">
-                        <label for="fondoTransparente" class="transparente">Fondo transparente</label>
+                        <label for="fondoTransparente" class="label-sin-texto">Fondo transparente</label>
                     </div>
                 </section>
                 <!------------ CONTORNO--------------->
                 <div class="box-aside contorno-letra">
                     <p class="subtitulo">Contorno</p>
+                    <div class="botones-contorno">
                     <button type="button" class="boton-contorno-letra" id="sin-contorno" aria-label="Boton para letra sin contorno">Ninguno</button>
                     <button type="button" class="boton-contorno-letra" id="contorno-claro" aria-label="Boton para letra con contorno claro">Claro</button>
                     <button type="button" class="boton-contorno-letra" id="contorno-oscuro" aria-label="Boton para letra con contorno oscuro">Oscuro</button>
-                    
+                    </div>
                 </div>
                 <!------------- ESPACIADO ------------>
                 <div class="box-aside espaciado-letra">
@@ -234,7 +243,7 @@
                 </div>
                 <!------------- INTERLINEADO ------------>
                 <div class="box-aside interlineado-letra">
-                    <label for="interlineado" id="interlineado" aria-label="Boton de espaciado">INTERLINEADO</label>
+                    <label class="subtitulo" for="interlineado" id="interlineado" aria-label="Boton de espaciado">INTERLINEADO</label>
                     <select name="interlineado" id="interlineado-valor" aria-label="interlineado">
                         <option value="0.8" aria-label="Valor 0.8">0.8</option>
                         <option value="1" aria-label="Valor 1">1</option>
