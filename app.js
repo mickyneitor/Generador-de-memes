@@ -48,6 +48,25 @@ inputURL.onkeyup = (event) => {
 
 }
 
+// ---- FONDO-----
+const inputColor = document.getElementById("color-fondo")
+const estiloDeFondo = document.getElementById("select-background")
+const imagenMeme = document.getElementById("meme-img")
+
+
+inputColor.oninput = () => {
+    //inputColor.value.innerHTML = inputColor
+    imagenMeme.style.backgroundColor = inputColor.value
+}
+
+estiloDeFondo.onchange = () => {
+    imagenMeme.style.backgroundBlendMode = estiloDeFondo.value
+       
+}
+
+
+
+
 // ------- HACER FUNCIONAR FILTROS --------
 const divMemeImg = document.querySelector(".divMeme")
 const brightnessInput = document.getElementById('brightness')
