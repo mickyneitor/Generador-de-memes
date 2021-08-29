@@ -17,17 +17,17 @@
     <title>Generador de memes</title>
 </head>
 
-<body class="modo-oscuro" id="body">
+<body class="modo-oscuro container" id="body">
 
     <!-- INICIO HEADER -->
     <header class="ancho-header">
         <h1 class="tituloTP">Generador de Memes</h1>
         <div class="panelDeBotones">
-            <button class="boton" id="boton-imagen"><i class="fas fa-file-image"></i> Imagen</button>
-            <button class="boton" id="boton-texto"><i class="fas fa-font"></i> Texto</button>
+            <button class="boton" id="boton-imagen"><i class="fas fa-file-image icono"></i> Imagen</button>
+            <button class="boton" id="boton-texto"><i class="fas fa-font icono"></i> Texto</button>
             <!--Cambiar Modo-->
             <button class="modo-claro" id="botonClaroNoMostrar">
-            <i class="fas fa-lightbulb"></i>Modo Claro
+            <i class="fas fa-lightbulb icono"></i>Modo Claro
             </button>   
         </div>
     </header>
@@ -198,25 +198,26 @@
                     
                 <section class="color-fondo">    
                     <!-- color del texto-->
-                   
-                    <div class="box-aside color">
+                <div class= "input-color-fondo">
+                    <div class="box-aside color col">
+                        
                         <label for="colorLetra" class="label-color" aria-label="Color del texto">COLOR</label>
                         <div class="panel-control-color">
-                        <input type="color" id="color-letra" value="#000000" aria-label="Boton color del texto">
+                        <input type="color" id="color-letra" value="#000000" aria-label="Boton color del texto"  >
                         <span id="textoColor">#000000</span>
                         </div>
                     </div>
                     <!-- color del fondo-->
-                    <div class="box-aside color-del-fondo">
+                    <div class="box-aside color-del-fondo col">
                         <label class="label-color" for="fondoLetra">FONDO</label>
                         <div class="panel-control-color">
-                        <input type="color" id="fondo-letra" value="#FFFFFF" aria-label="Color del fondo del texto">
+                        <input type="color" id="fondo-letra" value="#FFFFFF" aria-label="Color del fondo del texto" >
                         <span id="colorLabelFondo"> #FFFFFF</span>
                         </div>
                     </div>
-                  
+                </div>
                     <div class="box-aside sin-fondo">
-                        <input type="checkbox" id="fondo-transparente" aria-label="Fondo del texto transparente">
+                        <input type="checkbox" id="fondo-transparente" aria-label="Fondo del texto transparente" >
                         <label for="fondoTransparente" class="label-sin-texto">Fondo transparente</label>
                     </div>
                 </section>
