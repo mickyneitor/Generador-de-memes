@@ -12,7 +12,7 @@
 
 <br>
 
-### Si quieres ver como quedo finalizado puedes darle click a este [enlace](https://mickyneitor.github.io/Generador-de-memes/) o puedes hacerlo desde [acá] (aca va el link de netlify).
+### Si quieres ver como quedo finalizado puedes darle click a este [enlace](https://mickyneitor.github.io/Generador-de-memes/) o puedes hacerlo desde [acá](https://deploy-preview-35--compassionate-bose-3a3106.netlify.app/?utm_source=github&utm_campaign=bot_dp).
 
 <br>
 
@@ -43,7 +43,10 @@
 
  <br>
 
- ![imagen](aca va una screen de la pantalla de como queda el proyecto)
+ ![imagen](C:\Users\micag\Documents\ADA\Generador-de-memes\img\screencapture_generador1.png)
+ ![imagen](C:\Users\micag\Documents\ADA\Generador-de-memes\img\screencapture_generador2.png)
+ ![imagen](C:\Users\micag\Documents\ADA\Generador-de-memes\img\screencapture_generador3.png)
+ ![imagen](C:\Users\micag\Documents\ADA\Generador-de-memes\img\screencapture_generador4.png)
 
  <br>
 
