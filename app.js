@@ -41,9 +41,11 @@ const interlineadoValor = document.getElementById('interlineado-valor');
 // URL de la imagen asociada a la sección del meme
 inputURL.onkeyup = (event) => {
     
+    // por que necesitan esto?
     event.preventDefault();
     
     const inputUrlValue = inputURL.value;
+    // no dejen codigo comentado en una entrega
    // imagenDelMeme.src=inputUrlValue;
    contenedorImgMeme.style.backgroundImage = `url(${inputUrlValue})`;
 }
@@ -55,14 +57,22 @@ const imagenMeme = document.getElementById("meme-img")
 
 
 inputColor.addEventListener('input', () => {
+    // no dejen console log olvidados en una entrega
     console.log('Esta entrando a la función inputColor')
     const inputColorValue = inputColor.value;
     contenedorImgMeme.style.backgroundColor = inputColorValue;
+
+    // esta linea no tiene sentido. inputColorValue es una variable en donde guardaron 
+    // inputColor.value: no tiene un innerHTML al que modificar
     inputColorValue.innerHTML = inputColorValue;
 
 })
 
 estiloDeFondo.onchange = () => {
+    // A lo largo de todo el codigo hacen esto, declarar una variable para el value
+    // y usarla inmediatamente despues
+    // Es repetitivo e innecesario. Pueden hacer directamente:
+    // contenedorImgMeme.style.backgroundBlendMode = estiloDeFondo.value
     const valueEstiloDeFondo = estiloDeFondo.value
     contenedorImgMeme.style.backgroundBlendMode = valueEstiloDeFondo
        
@@ -115,6 +125,7 @@ restablecerFiltros.addEventListener("click", () =>{
     divMemeImg.style.filter = brightnessInput.value = "1";
                               opacityInput.value = "1";
                               contrastInput.value = "100";
+                            //   deberia ser 0
                               blurInput.value = "1";
                               grayScaleInput.value = "0";
                               sepiaInput.value = "0";
@@ -143,7 +154,7 @@ textoInferiorTextarea.addEventListener('keyup' , () => {
 // Sin texto Superior
 
 sinTextoSuperior.onchange = () => {
-
+    // atencion a los espacios en js: if (sinTextoSuperior.checked) {
     if(sinTextoSuperior.checked){
 
         textoSuperiorMeme.classList.add('no-mostrar-texto');
@@ -196,6 +207,7 @@ window.addEventListener('load' , () => {
 // Botoncito de cierre de los paneles
 
 cierrePanelImagen.addEventListener('click', () => {
+    // no dejen comentarios en una entrega
     // console.log('cierra')
     panelImagen.classList.add('no-mostrar-panel');
 });
@@ -210,6 +222,7 @@ cierrePanelTexto.addEventListener ('click', () => {
 fuenteSelect.addEventListener('change', () => {
 
     const fontValue = fuenteSelect.value;
+    // innecesaria la interpolacion aca
     textoInferiorMeme.style.fontFamily = `${fontValue}`;
     textoSuperiorMeme.style.fontFamily = `${fontValue}`;
 });
@@ -227,11 +240,13 @@ tamanioFuente.addEventListener('input' , () => {
 
 const modoOscuro = document.querySelector(".modo-oscuro")
 const modoClaro = document.querySelector(".modo-claro")
+// no dejen console log en una entrega
 console.log(modoClaro)
 console.log(modoOscuro)
 
 const botonModos = document.getElementById("botonClaroNoMostrar")
 
+// corrijan el tabulado aca
 botonModos.addEventListener("click", () => {modoOscuro.classList.toggle("modo-claro");
 modoOscuro.classList.toggle("modo-oscuro");
 
@@ -298,6 +313,9 @@ fondoTransparente.addEventListener('change', () => {
         textoSuperiorMeme.style.backgroundColor = 'transparent';
         textoInferiorMeme.style.backgroundColor = 'transparent';
     }else{
+        // innecesarios los backticks y la interpolacion aca, deberia funcionar 
+        // igual si escriben simplemente:
+        // textoSuperiorMeme.style.backgroundColor = fondoLetra.value;
         textoSuperiorMeme.style.backgroundColor = `${fondoLetra.value}`;
         textoInferiorMeme.style.backgroundColor = `${fondoLetra.value}`;
     }
