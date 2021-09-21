@@ -49,6 +49,8 @@ main {
 }
 
 .modo-oscuro main{
+  /* no es necesario repetir todos los estilos de main, sino solo aquellos que van a 
+  modificarse con modo-oscuro y modo-claro  */
   background-color: #30343f;
   color:#fff;
   display: flex;
@@ -89,7 +91,7 @@ main {
     color: black;
     
   }
-
+/* atencion al tabulado aca */
   p {
       margin:0;
       font-family: 'Montserrat', sans-serif;
@@ -363,6 +365,7 @@ input[type=checkbox]{
 .color
 .color-del-fondo {
   display: flex;
+  /* nunca usen important. no deberia ser necesario esto aqui */
   flex-direction: row !important;
   width: 100%;
   margin-right: 2%;
@@ -393,6 +396,7 @@ input[type=checkbox]{
 
 .panel-control-color {
   display: flex;
+  /* no usen important! si un estilo no se esta aplicando, hay que ver por qué */
   flex-direction: row !important;
   margin: 1% !important;
   width: 90% !important;
@@ -412,6 +416,7 @@ input[type=checkbox]{
 }
 
 .sin-fondo {
+  /* innecesario */
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -433,6 +438,7 @@ input[type=checkbox]{
 
 .contorno-letra .botones-contorno {
   display: flex;
+  /* innecesario */
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 20px;
